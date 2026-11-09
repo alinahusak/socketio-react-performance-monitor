@@ -1,0 +1,23 @@
+{
+  "name": "nodeclient",
+  "version": "1.0.0",
+  "description": "Collects performance data and sends it to the Socket.IO server",
+  "main": "dist/nodeClient/src/index.js",
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "build": "tsc",
+    "start": "node dist/nodeClient/src/index.js",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "socket.io-client": "^4.8.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "~5.9.2"
+  }
+}

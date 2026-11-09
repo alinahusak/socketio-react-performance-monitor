@@ -1,0 +1,26 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "Clustered Socket.IO server for the performance monitor",
+  "main": "dist/server/src/servers.js",
+  "scripts": {
+    "dev": "tsx src/servers.ts",
+    "build": "tsc",
+    "start": "node dist/server/src/servers.js",
+    "cluster-demo": "tsx src/clusterTest.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@socket.io/cluster-adapter": "^0.2.2",
+    "@socket.io/sticky": "^1.0.3",
+    "socket.io": "^4.8.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "~5.9.2"
+  }
+}
